@@ -74,7 +74,7 @@ func SetUp(name, kVersion string, installServing, installEventing, installKindRe
 		if installServing {
 			// Disable tag resolution for localhost registry, since there's no
 			// way to redirect Knative Serving to use the kind-registry name.
-			// See https://github.com/knative-extensions/kn-plugin-quickstart/issues/467
+			// See https://files.m.daocloud.io/github.com/knative-extensions/kn-plugin-quickstart/issues/467
 			registries := ""
 			if installKindRegistry {
 				registries = fmt.Sprintf("localhost:%s", container_reg_port)
@@ -248,7 +248,7 @@ func checkKindVersion() error {
 	if userKindVersion < kindVersion {
 		var resp string
 		fmt.Printf("WARNING: We recommend at least Kind v%.2f, while you are using v%.2f\n", kindVersion, userKindVersion)
-		fmt.Println("You can download a newer version from https://github.com/kubernetes-sigs/kind/releases")
+		fmt.Println("You can download a newer version from https://files.m.daocloud.io/github.com/kubernetes-sigs/kind/releases")
 		fmt.Print("Continue anyway? (not recommended) [y/N]: ")
 		fmt.Scanf("%s", &resp)
 		if resp == "n" || resp == "N" {

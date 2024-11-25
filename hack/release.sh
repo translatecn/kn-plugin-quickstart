@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # Documentation about this script and how to use it can be found
-# at https://github.com/knative/hack
+# at https://files.m.daocloud.io/github.com/knative/hack
 
 PLUGIN="kn-quickstart"
 VERSION_PACKAGE="knative.dev/kn-plugin-quickstart/internal/command"

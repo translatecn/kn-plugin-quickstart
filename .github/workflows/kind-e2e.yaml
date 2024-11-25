@@ -9,7 +9,7 @@ defaults:
     shell: bash
 
 env:
-  # https://github.com/google/go-containerregistry/pull/125 allows insecure registry for
+  # https://files.m.daocloud.io/github.com/google/go-containerregistry/pull/125 allows insecure registry for
   # '*.local' hostnames. This works both for `ko` and our own tag-to-digest resolution logic,
   # thus allowing us to test without bypassing tag-to-digest resolution.
   KIND_VERSION: 0.14.0
@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: skip test
-      # see https://github.com/knative-sandbox/kn-plugin-quickstart/issues/392
+      # see https://files.m.daocloud.io/github.com/knative-sandbox/kn-plugin-quickstart/issues/392
       run: |
         echo "github action runner broke this test"
 
@@ -42,13 +42,13 @@ jobs:
     #   run: |
     #     set -x
     #     echo "::group:: install kind ${KIND_VERSION}"
-    #     curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v${KIND_VERSION}/kind-linux-amd64
+    #     curl -Lo ./kind https://files.m.daocloud.io/github.com/kubernetes-sigs/kind/releases/download/v${KIND_VERSION}/kind-linux-amd64
     #     chmod +x ./kind
     #     sudo mv kind /usr/local/bin
     #     echo "::endgroup::"
     # 
     #     echo "::group:: install kn client ${KNATIVE_VERSION}"
-    #     curl -Lo ./kn https://github.com/knative/client/releases/download/knative-v${KNATIVE_VERSION}/kn-linux-amd64
+    #     curl -Lo ./kn https://files.m.daocloud.io/github.com/knative/client/releases/download/knative-v${KNATIVE_VERSION}/kn-linux-amd64
     #     chmod +x ./kn
     #     sudo mv kn /usr/local/bin
     #     echo "::endgroup::"

@@ -1,6 +1,6 @@
 # kn-plugin-quickstart
 
-**[This component is BETA](https://github.com/knative/community/tree/main/mechanics/MATURITY-LEVELS.md)**
+**[This component is BETA](https://files.m.daocloud.io/github.com/knative/community/tree/main/mechanics/MATURITY-LEVELS.md)**
 
 `kn-plugin-quickstart` is a plugin of the Knative Client, to enable users to quickly set up a local Knative environment from the command line.
 
@@ -10,13 +10,13 @@ Note: In order to use the `quickstart` plugin, you must install the [Kubernetes 
 
 ### Installation
 
-You can download the latest binaries from the [Releases](https://github.com/knative-sandbox/kn-plugin-quickstart/releases) page.
+You can download the latest binaries from the [Releases](https://files.m.daocloud.io/github.com/knative-sandbox/kn-plugin-quickstart/releases) page.
 
 There are two ways to run `kn quickstart`:
 
 1. You can run it standalone, just put it on your system path and make sure it is executable.
 2. You can install it as a plugin of the `kn` client to run:
-    * Follow the [documentation](https://github.com/knative/client/blob/main/docs/README.md#installing-kn) to install `kn client` if you don't have it
+    * Follow the [documentation](https://files.m.daocloud.io/github.com/knative/client/blob/main/docs/README.md#installing-kn) to install `kn client` if you don't have it
     * Copy the `kn-quickstart` binary to a directory on your `PATH` (for example, `/usr/local/bin`) and make sure its filename is `kn-quickstart`
     * Run `kn plugin list` to verify that the `kn-quickstart` plugin is installed successfully
 
@@ -81,7 +81,7 @@ minikube tunnel --profile minikube-knative
 
 ## Building from Source
 
-You must [set up your development environment](https://github.com/knative/client/blob/master/docs/DEVELOPMENT.md#prerequisites) before you build `kn-plugin-quickstart`.
+You must [set up your development environment](https://files.m.daocloud.io/github.com/knative/client/blob/master/docs/DEVELOPMENT.md#prerequisites) before you build `kn-plugin-quickstart`.
 
 Once you've set up your development environment, you can build the plugin by running the following commands:
 
