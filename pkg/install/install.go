@@ -22,9 +22,9 @@ import (
 )
 
 // Component versions are generated at buildtime via the hack/build.sh script
-var ServingVersion string
-var KourierVersion string
-var EventingVersion string
+const ServingVersion = `1.16.0`
+const KourierVersion = `1.16.0`
+const EventingVersion = `1.16.0`
 
 // Kourier installs Kourier networking layer from Github YAML files
 func Kourier() error {
@@ -244,6 +244,7 @@ func runCommand(c *exec.Cmd) error {
 // retryingApply retries a kubectl apply call with the given path 3 times, sleeping
 // for 10s between each try.
 func retryingApply(path string) error {
+	fmt.Println(path)
 	cmd := exec.Command("kubectl", "apply", "-f", path)
 	var err error
 	for i := 0; i < 3; i++ {
